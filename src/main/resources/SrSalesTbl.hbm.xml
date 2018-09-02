@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 30 Aug, 2018 10:46:01 PM by Hibernate Tools 5.3.1.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="ciocpdb" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.varun.ciocp.repo.model.SrSalesTbl" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="sr_sales_tbl">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="srId" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="SR_ID"/>
+        </property>
+        <property generated="never" lazy="false" name="productName" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="PRODUCT_NAME"/>
+        </property>
+        <property generated="never" lazy="false" name="department" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="DEPARTMENT"/>
+        </property>
+        <property generated="never" lazy="false" name="inDate" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="26" name="IN_DATE"/>
+        </property>
+        <property generated="never" lazy="false" name="outDate" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="26" name="OUT_DATE"/>
+        </property>
+        <property generated="never" lazy="false" name="count" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="COUNT"/>
+        </property>
+        <property generated="never" lazy="false" name="unitPrice" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="UNIT_PRICE" precision="22" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>
